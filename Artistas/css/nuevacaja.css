@@ -1,0 +1,519 @@
+*{margin: 0px;
+padding: 0px;}
+
+@font-face{font-family: Dreee; src: url(red.ttf);}
+body::-webkit-scrollbar{
+  background-image: url(https://1.bp.blogspot.com/-5wZcqjuX8Us/XwFnKFbXJjI/AAAAAAAABwg/IHOjo-6D1H8c5Tc-pwdjYm6Y-HW0sBNSgCLcBGAsYHQ/s1600/main-taidl.jpg);
+  width: 10px;}
+body::-webkit-scrollbar-thumb{
+  background: #9e8a9e6c;
+  border-radius: none;}
+  body::-webkit-scrollbar-thumb:hover{
+    background: #daceda6c;
+    border-radius: 2px;}
+    /*==================Boton de descarga============================
+    ==============================================*/
+
+    .gamp-btn a {
+      margin:auto;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      background: #272727;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      
+      line-height: 60px;
+      -moz-transition: all 0.5s ease-in-out 0s;
+      -ms-transition: all 0.5s ease-in-out 0s;
+      -o-transition: all 0.5s ease-in-out 0s;
+      -webkit-transition: all 0.5s ease-in-out 0s;
+      transition: all 0.5s ease-in-out 0s;
+    }
+    .gamp-btn a:hover {
+      color: #ffffff;
+      opacity: 0.8;
+      transition: all 0.5s;
+      text-decoration: none;
+      -moz-transition: all 0.5s ease-in-out 0s;
+      -ms-transition: all 0.5s ease-in-out 0s;
+      -o-transition: all 0.5s ease-in-out 0s;
+      -webkit-transition: all 0.5s ease-in-out 0s;
+      transition: all 0.5s ease-in-out 0s;
+    }
+
+div#margin-repro{margin: auto;
+  margin-top: 8%;
+width: 90%;
+height: 470px;
+background-color: #3b65881f; border-radius: 3px;
+}
+
+div#player{
+float: right;
+margin: auto ;
+width: 47%;
+height:80%;
+background-image: url(notas.png);
+background-position: auto 1px;
+background-size: 95%;
+border: none;
+background-repeat: no-repeat;
+}
+
+div#Reproduc-descarga{
+
+width: 50%;
+height: auto;
+background-color:#35353560 ; border-radius: 3px;
+padding: 1%;
+}
+
+    /*=============================
+Reproductor
+================================*/
+ul#playlist{
+  padding: 2% 2% 2% 2%;
+  width: 75%;
+  height: auto;
+  }
+ul#playlist li {background-color: #42424244; box-shadow: 0px 0px 2px #000000c2; border-radius: 4px;}
+ul#playlist li a{  
+  color: #CCC;
+  background: rgb(50, 52, 54);
+  padding: 7px 5px;
+  display: block;
+  padding-left: 10px;
+  text-decoration: none;
+  height: 45px;
+  
+  border-bottom: solid 2px #1d1c1c;
+  font-family: Dreee;
+  transition: all 0.2s ease-in-out; 
+  -webkit-transition: all 0.2s ease-in-out; 
+  -moz-transition: all 0.2s ease-in-out; 
+  -o-transition: all 0.2s ease-in-out; 
+  -ms-transition: all 0.2s ease-in-out; 
+}
+ul#playlist li a:hover{
+  background: #252d3a;
+  text-decoration: none;
+  box-shadow:inset 1px 1px 8px #330f2a;
+}
+ul#playlist li a:focus{background-color:#252d3a; text-decoration: none; box-shadow: inset 1px 1px 8px #291e2b ;}
+ul#playlist .active a{color:#b9b9ad00; font-style: italic; background-image: url(sd.gif); background-size: 100% 100%; background-repeat: no-repeat; background-position: center;}
+ul#playlist .active a::before{ content: "\25B6"; color:#79746a00; padding-left: 8px; font-style: normal;}
+ul#playlist .active a:hover { 
+  color: rgba(243, 243, 243, 0.205);}
+  #todo2{ height: 0px;  }
+/*=================================BOT-DESCARGA==============*/
+.icon--music{padding:0px 4px 0px 0px;}
+ul{padding: 2% ;}
+ul#bot-descarga{ float: right; width: 22%;height: auto;display: block;background-color:none;}
+ul#bot-descarga li{  height: 45px; background-color: none; text-align: center;  }
+ul#bot-descarga li a{ border-radius: 6px; padding: 15px 5px;  background-color:#292929;  box-shadow: 0px 0px 8px #000000c2; text-transform: uppercase; font-size: 10px; color: black; text-decoration: none; line-height: 45px; transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2 ease-in-out; -ms-transition:all 0.2s ease-in-out;}
+ul#bot-descarga li a:hover{background-color: blanchedalmond; transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2 ease-in-out; -ms-transition:all 0.2s ease-in-out;}
+ul#bot-descarga li a:focus{color:#000000; text-decoration:none; background-color: #b8d3d4fa ;  }
+/*==============================================================================================================
+===============================================================AUDIO=======================================*/
+audio {
+  width:40px;
+  height: 45px;
+  margin:2px auto;
+  display: inline-block;
+  position: relative;
+  border-radius: 10px;
+  box-shadow:0px 0px 5px  #000000;
+  background-color: #fff0f0;
+  opacity: 0;
+  z-index: 4;
+      border-top: 3px solid #000000;
+      border-left: 3px solid #000000;
+      border-right: 3px solid #000000;
+      border-bottom: 3px solid #000000;
+      -moz-transition: all 0.8s ease-in-out 0s;
+      -ms-transition: all 0.8s ease-in-out 0s;
+      -o-transition: all 0.8s ease-in-out 0s;
+      -webkit-transition: all 0.8s ease-in-out 0s;
+      transition: all 0.8s ease-in-out 0s;  
+  
+  }
+  
+  
+  audio:hover{opacity: .8; width:440px;
+    height: 45px;
+    border-top: 3px solid #000000;
+    border-left: 3px solid #000000;
+    border-right: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+    box-shadow: 0px 0px 17px #000000;
+    -moz-transition: all 0.5s ease-in-out 0s;
+      -ms-transition: all 0.5s ease-in-out 0s;
+      -o-transition: all 0.5s ease-in-out 0s;
+      -webkit-transition: all 0.5s ease-in-out 0s;
+      transition: all 0.5s ease-in-out 0s;  
+  
+  }
+  div#audio-repro{background-color: #23353dc0; width: 40px; height: 50px; margin:30% 2%; border-radius: 10px;}
+  div#audio-repro:hover{box-shadow: 0px 0px 9px black ; width: 40px; height: 50px;}
+  div#texto{background-color:none; margin: -43px auto;}
+   .icon-volume-medium{color: #000000de; margin: -44px 6px; z-index: 1; height: 2px; font-size: 30px; }
+  /*============================================================================================================
+  ==================================BOT-NEXT==========================================================*/
+  div#bot-next{ background: #1b1b1b7a; height:10.5%;  }
+  div#bot-next li{text-decoration: none; display: inline-block; background-color: #000000; padding: auto; width: 60px; margin: 10px auto;}
+  div#bot-next li a{background-color: #424242; margin: 0.9px 6px;  padding: 7px 5px; color: black; }
+  div#bot-next li a:hover{background-color: #96b5c2; text-decoration: none;}
+  div#bot-next #next-bottom{ background-color: #ffffff; float: right; }
+  /*==================================================================================================
+  ==================================================FOOTER========================================*/
+  div#subfooter{background-color: #25313177; margin: auto; margin-top: 11% ; height: 100px; }
+  div#social-network {  margin: auto 9%; padding: 1%;}
+  div#icon-social li {display: inline; font-size: 25px; text-decoration: none;}
+  div#icon-social :hover{color: darkgoldenrod; text-decoration: none;}
+  div#social-network li a{  color:#cec469;}
+
+  div.copyright{float:right; margin: -40px 8%; font-family: Dreee; } 
+    div.copyright a{color: #cec469;	
+      font-size:14px;
+      text-shadow:none; text-decoration: none;}
+
+          /*===============================Responsive=========================================*/
+       
+          @media (max-width:1024px) {
+           
+            div#margin-repro{ margin:  auto;
+              height: auto;
+      
+            }
+            div#Reproduc-descarga{ width: auto;
+              
+         }
+            ul#playlist { margin-top: 77%; width: 80%; }
+            ul#playlist li a {  }
+            ul#bot-descarga{ margin-top: 11.4%; width:auto;}
+            div#player{
+      
+            float: left;
+            width: 100%;
+            height: auto;
+            background-size: 98% 100%;
+          }
+          audio{ margin-top: 85px; margin-left: 15px; }
+          audio:hover{width:600px; }
+          div#audio-repro{background: none; }
+          div#texto .icon-volume-medium {margin-left: 20px; background-color: #0f191ac5; border-radius: 5px;}
+          div#audio-repro:hover{box-shadow: none;}
+          div#subfooter{background-color: #3628269c;}
+          }
+
+
+          @media (max-width: 896px) {
+
+            ul#playlist { margin-top: 78%; width: 80%; }
+          
+            ul#bot-descarga{ margin-top: 11.3%; width:auto;}
+         
+          }
+
+        
+
+          @media (max-width: 800px) {
+            div#margin-repro{ margin:  auto;
+              height: auto;
+      
+            }
+            div#Reproduc-descarga{ width: auto;
+              
+         }
+            ul#playlist { margin-top: 78%; width: 80%; }
+            ul#playlist li a {  }
+            ul#bot-descarga{ margin-top: 10%; width:auto;}
+            div#player{
+      
+            float: left;
+            width: 100%;
+            height: auto;
+            background-size: 98% 100%;
+          }
+          audio{ margin-top: 85px; margin-left: 15px; }
+          audio:hover{width:318px; }
+          div#audio-repro{background: none; }
+          div#texto .icon--music{margin-left: 20px;}
+          div#audio-repro:hover{box-shadow: none;}
+          div#subfooter{background-color: #262e369c;}
+          }
+
+
+
+
+          @media (max-width: 768px) {
+            div#margin-repro{ margin:  auto;
+              height: auto;
+      
+            }
+            div#Reproduc-descarga{ width: auto;
+              
+         }
+            ul#playlist { margin-top: 78%; width: 80%; }
+            ul#playlist li a {  }
+            ul#bot-descarga{ margin-top: 10%; width:auto;}
+            div#player{
+      
+            float: left;
+            width: 100%;
+            height: auto;
+            background-size: 98% 100%;
+          }
+          audio{ margin-top: 85px; margin-left: 15px; }
+          audio:hover{width:318px; }
+          div#audio-repro{background: none; }
+          div#texto .icon--music{margin-left: 20px;}
+          div#audio-repro:hover{box-shadow: none;}
+          div#subfooter{background-color: #262e369c;}
+          }
+
+
+
+
+
+          @media (max-width: 660px) {
+            div#margin-repro{ margin:  auto;
+              height: auto;
+      
+            }
+            div#Reproduc-descarga{ width: auto;
+              
+         }
+            ul#playlist { margin-top: 78%; width: 77%; }
+            ul#playlist li a {  }
+            ul#bot-descarga{ margin-top: 8.5%; width:auto;}
+            div#player{
+      
+            float: left;
+            width: 100%;
+            height: auto;
+            background-size: 98% 100%;
+          }
+          audio{ margin-top: 85px; margin-left: 15px; }
+          audio:hover{width:318px; }
+          div#audio-repro{background: none; }
+          div#texto .icon--music{margin-left: 20px;}
+          div#audio-repro:hover{box-shadow: none;}
+          div#subfooter{background-color: #262e369c;}
+          }
+
+
+          @media (max-width: 570px) {
+           
+            div#margin-repro{ margin:  auto;
+              height: auto;
+      
+            }
+            div#Reproduc-descarga{ width: auto;
+              
+         }
+            ul#playlist { margin-top: 81%; width: 68%; font-size: 13px; }
+            ul#playlist li a {  }
+            ul#bot-descarga{ margin-top: 10%; width:auto;}
+            div#player{
+      
+            float: left;
+            width: 100%;
+            height: auto;
+            background-size: 98% 100%;
+          }
+          audio{ margin-top: 85px; margin-left: 15px; }
+          audio:hover{width:318px; }
+          div#audio-repro{background: none; }
+          div#texto .icon--music{margin-left: 20px;}
+          div#audio-repro:hover{box-shadow: none;}
+          div#subfooter{background-color: #262e369c;}
+          }
+
+
+
+
+
+          @media (max-width: 491px) {
+            div#Reproduc-descarga{ width: auto;
+              
+         }
+            ul#playlist { margin-top: 85%; width: 68%; font-size: 12px;  }
+            ul#bot-descarga{ margin-top: 11.5%; width:auto;}
+         
+
+         
+         
+
+          @media (max-width: 414px) {
+            div#margin-repro{ margin:  auto;
+              height: auto;
+      
+            }
+            div#Reproduc-descarga{ width: auto;
+              
+         }
+            ul#playlist { margin-top: 85%; width: 68%; }
+            ul#playlist li a {  }
+            ul#bot-descarga{ margin-top: 10%; width:auto;}
+            div#player{
+      
+            float: left;
+            width: 100%;
+            height: auto;
+            background-size: 98% 100%;
+          }
+          audio{ margin-top: 85px; margin-left: 15px; }
+          audio:hover{width: 285px; }
+          div#audio-repro{background: none; }
+          div#texto .icon--music{margin-left: 20px;}
+          div#audio-repro:hover{box-shadow: none;}
+          div#subfooter{background-color: #2636299c;}
+          }
+
+
+
+
+          @media (max-width: 411px) {
+            div#margin-repro{ margin:  auto;
+              height: auto;
+      
+            }
+            div#Reproduc-descarga{ width: auto;
+              
+         }
+            ul#playlist { margin-top: 85%; width: 68%; }
+            ul#playlist li a {  }
+            ul#bot-descarga{ margin-top: 10%; width:auto;}
+            div#player{
+      
+            float: left;
+            width: 100%;
+            height: auto;
+            background-size: 98% 100%;
+          }
+          audio{ margin-top: 85px; margin-left: 15px; }
+          audio:hover{width: 285px; }
+          div#audio-repro{background: none; }
+          div#texto .icon--music{margin-left: 20px;}
+          div#audio-repro:hover{box-shadow: none;}
+          div#subfooter{background-color: #2636299c;}
+       
+      
+      
+      
+          }
+          @media (max-width: 375px) {
+            div#margin-repro{ margin:auto;
+              height: auto;
+      
+            }
+            div#Reproduc-descarga{ width: auto;
+              
+         }
+            ul#playlist { margin-top: 87.4%; width: 65%; }
+            ul#playlist li a {  }
+            ul#bot-descarga{ margin-top: 11.5%; width:auto;}
+            div#player{
+      
+            float: left;
+            width: 100%;
+            height: auto;
+            background-size: 98% 100%;
+          }
+          audio{ margin-top: 85px; margin-left: 15px; }
+          audio:hover{width: 270px; }
+          div#audio-repro{background: none; }
+          div#subfooter{background-color: #26362b9c;}
+          div.copyright{float: right;}
+          }
+       
+          @media (max-width: 360px) {
+            
+      div#margin-repro{ margin: 0px auto;
+        height: auto;
+
+      }
+      div#Reproduc-descarga{ width: auto;
+        
+   }
+      ul#playlist { margin-top: 87.4%; width: 65%; font-size: 9px;  }
+      ul#playlist li a {  }
+      ul#bot-descarga{ margin-top: 11%; width:auto;}
+      div#player{
+
+      float: left;
+      width: 100%;
+      height: auto;
+      background-size: 98% 100%;
+    }
+    audio{ margin-top: 85px; margin-left: 15px; }
+    audio:hover{width: 270px; }
+    div#audio-repro{background: none; }
+    div#texto .icon--music{margin-left: 20px;}
+    div#audio-repro:hover{box-shadow: none;}
+    div#subfooter{background-color: #2635369c;}
+    }
+    @media (max-width: 350px) {
+      div#margin-repro{ margin:auto;
+      }
+      div#Reproduc-descarga{ width: auto;
+        
+   }
+      ul#playlist { margin-top: 89.3%; width: 60%; }
+      ul#playlist li a {  }
+      ul#bot-descarga{ margin-top: 10%; width:auto;}
+  
+   
+    audio:hover{width: 245px;  margin-left: 5px;}
+    audio{ margin-left: 5px;}
+    div#texto .icon--music{margin-left: 6px; color: #015e83;}
+    div#subfooter{background-color: #2b26369c;}
+    div.copyright{margin-top:-31px; }
+  }
+
+
+
+
+    @media (max-width: 320px) {
+      div#margin-repro{ margin:auto;
+      }
+      div#Reproduc-descarga{ width: auto;
+        
+   }
+      ul#playlist { margin-top: 89.3%; width: 60%; }
+      ul#playlist li a {  }
+      ul#bot-descarga{ margin-top: 10.9%; width:auto;}
+  
+   
+    audio:hover{width: 245px;  margin-left: 5px;}
+    audio{ margin-left: 5px;}
+    div#texto .icon--music{margin-left: 6px; color: #015e83;}
+    div#subfooter{background-color: #2b26369c;}
+    div.copyright{margin-top:-31px; }
+  }
+
+
+
+    @media (max-width: 280px) {
+      ul#playlist { margin-top: 91.5%; width: 59%;  }
+      ul#bot-descarga{ margin-top: 10%; }  
+    audio:hover{width: 220px;  margin-left: 5px;}
+    audio{ margin-left: 5px;}
+    div#texto .icon--music{margin-left: 6px; color: #c9bfc9;}
+    div#subfooter{background-color: #36262e9c;}
+    }
+    div.copyright{margin-top:-31px; }
+
+    @media (max-width: 278px) {
+      ul#playlist { margin-top: 91.5%; width: 126px;  }
+      ul#bot-descarga{ margin-top: 10%; width: 100px;}  
+ 
+    audio:hover{width: 200px;  margin-left: 5px;}
+    audio{ margin-left: 5px;}
+    div#texto .icon--music{margin-left: 6px; color: #c9bfc9;}
+    div#subfooter{background-color: #36262e9c;}
+    }
+    div.copyright{margin-top:-31px; }

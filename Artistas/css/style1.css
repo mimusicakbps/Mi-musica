@@ -1,0 +1,162 @@
+@font-face{ font-family:Dreee; src: url(red.otf);} 
+@font-face{ font-family:Dre; src: url(Dream2.ttf);} 
+body {
+	font-size: 15px;
+    line-height: 1.52;
+    color: #717f86;
+    font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden; 
+    background-color: #2b2b2b;
+    background-image: url(https://1.bp.blogspot.com/-5wZcqjuX8Us/XwFnKFbXJjI/AAAAAAAABwg/IHOjo-6D1H8c5Tc-pwdjYm6Y-HW0sBNSgCLcBGAsYHQ/s1600/main-taidl.jpg);
+	
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+#banner{
+    background: url(../img/banner-bg.jpg) no-repeat center top;
+    background-size: 100% 110%;
+    min-height: 630px;
+    
+    opacity: .9;
+}
+.bg-color{
+    background-color: RGBA(0, 0, 0, 0.61);
+    min-height: 630px;
+}
+#banner h2{
+    font-family: 'Satisfy', sans-serif;
+    font-size: 45px;
+    color: #FFB03B;
+}
+#banner p{
+    font-family: 'PT Sans', sans-serif;
+    color: #fcfcfc;
+    font-size: 34px;
+}
+.section-padding{
+    padding: 60px 0px;
+}
+.logo-name{
+    font-family:Dre;
+    font-size: 100px;
+    margin-top: 140px;
+    color: #c9c9c9;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 24;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.sidenav a { 
+   text-transform: uppercase;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s
+}
+.sidenav a:hover, .offcanvas a:focus{
+    color: #000000;  background-color: #ffffff;
+}
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+.menu-icon
+{
+    color: #fff;
+    font-size: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.header-h {
+    color: #FFB03B;
+    font-size: 46px;
+    font-family: 'Satisfy', sans-serif;
+    font-weight: 300;
+}
+.section-padding {
+  
+    background-color: rgba(219, 219, 219, 0.658);
+}
+.header-p {
+    font-family:Dreee;
+    color: #000000;
+    font-size: 16px;
+    text-align: justify;
+  
+}
+
+#player .icon--music{ color: black; font-size: 150%; line-height: 500%; position: absolute; margin: auto 3%; }
+
+
+
+
+@media (min-width: 451px) and (max-width: 767px) {
+    .details-text {
+        border:0px;
+        border-bottom: 2px solid #A87F41;
+    }
+}
+@media (min-width: 20px) and (max-width: 450px) {
+    #banner{background-size: auto auto;}
+    .menu-restaurant {
+    width: 100%;
+    }
+    .details-text {
+        border:0px;
+        border-bottom: 2px solid #A87F41;
+    }
+    .header-h {
+        font-size: 35px;
+    }
+    .header-p, body{
+        font-size: 14px;
+    }
+    
+    .about-info, .mr-15{
+        margin-bottom: 15px;
+      
+    }
+    #banner h2{
+        font-size: 25px;
+    }
+    #banner p{
+        font-size: 25px;
+    }
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Las 3 metaetiquetas anteriores * deben * ser lo primero en la cabeza; cualquier otro contenido principal debe venir * después * de estas etiquetas -->
+  <title>Mi Musica</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.png">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/animate.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/estilos.css">
+ 
+  <script src="js/jquery1.js"></script>
+  <script src="js/jquery.dataTables.min.js"></script>
+</head>
+
+<body>
+  <header id="header">
+    <nav class="navbar navbar-default navbar-static-top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+          <div class="navbar-brand">
+            <a href="index.html"><h1><span class="icon--music"></span>Music<span class="icon--music"></span></h1></a>
+          </div>
+        </div>
+        <div class="navbar-collapse collapse">
+          <div class="menu">
+            <ul class="nav nav-tabs" role="tablist">
+             
+              <li role="presentation"><a href="index.html"><span class="icon-home"></span>Home</a></li>
+              <li role="presentation"><a href="gallery.html"><span class="icon-user-tie"></span>Artistas</a></li>
+              <li role="presentation"> <a href="buscar.html" target="-black"><span class="icon-search " ></span>Buscar Artistas</a></li>
+              
+            
+           
+            </ul>
+        </header>
+     
+           
+
+          </div>
+        </div>
+      </div>
+      <!--/.container-->
+    </nav>
+    <!--/nav-->
+  </header>
+  <!--/header-->
+  
+  <div class="slider">
+    <div id="about-slider">
+      <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators visible-xs">
+          <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-slider" data-slide-to="1"></li>
+          <li data-target="#carousel-slider" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/slide.jpg" class="img-responsive" alt="">
+            <div class="carousel-caption">
+              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+                <h2><span></span></h2>
+              </div>
+              <div class="col-md-10 col-md-offset-1">
+                <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
+                  <p>La música es para el alma lo que la gimnasia para el cuerpo by Platón</p>
+                </div>
+              </div>
+              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.9s">
+                <form class="form-inline">
+                  <div class="form-group">
+                    <button type="livedemo" name="Live Demo" class="btn btn-primary btn-lg" required="required">Siguenos</button>
+                  </div>
+                  <div class="form-group">
+                    <button type="getnow" name="Get Now" class="btn btn-primary btn-lg" required="required"> En Facebook</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="img/slide1.jpg" class="img-responsive" alt="">
+            <div class="carousel-caption">
+              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.0s">
+                <h2></h2>
+              </div>
+              <div class="col-md-10 col-md-offset-1">
+                <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
+                  <p>La música es un eco del mundo invisible by Giuseppe Mazzini</p>
+                </div>
+              </div>
+              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.6s">
+                <form class="form-inline">
+                  <div class="form-group">
+                    <button type="livedemo" name="purchase" class="btn btn-primary btn-lg" required="required">Siguenos</button>
+                  </div>
+                  <div class="form-group">
+                    <button type="getnow" name="subscribe" class="btn btn-primary btn-lg" required="required">En Instagram</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/slide2.jpg" class="img-responsive" alt="">
+            <div class="carousel-caption">
+              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+                <h2></h2>
+              </div>
+              <div class="col-md-10 col-md-offset-1">
+                <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
+                  <p>Estoy seguro de que la buena música la vida alarga
+
+                   by Jehudi Menuhin</p>
+                </div>
+              </div>
+              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.9s">
+                <form class="form-inline">
+                  <div class="form-group">
+                    <button type="livedemo" name="purchase" class="btn btn-primary btn-lg" required="required">Siguenos</button>
+                  </div>
+                  <div class="form-group">
+                    <button type="getnow" name="subscribe" class="btn btn-primary btn-lg" required="required">En Facebook</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
+					<i class="icon-ctrl"></i>
+				</a>
+
+        <a class=" right carousel-control hidden-xs" href="#carousel-slider" data-slide="next">
+					<i class="icon-ctrl1"></i>
+				</a>
+      </div>
+      <!--/#carousel-slider-->
+    </div>
+    <!--/#about-slider-->
+  </div>
+  <!--/#slider-->
+
+  <div class="about">
+    <div class="container">
+      <div class="text-center">
+        <h2>Descarga álbumes completos  </h2>
+        <div class="col-md-10 col-md-offset-1">
+          <p>Bienvenido a mi página aquí pues encontrar álbumes completas de tus artistas preferidos, descarga de forma fácil. </p>
+        </div>
+
+        <div class="col-md-6 col-sm-6 col-xs-6">
+        <!--  <div class="btn-gamp"><a href="#">Learn More</a></div>-->
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <div class="gamp-btn"><a href="https://docs.google.com/uc?export=download&amp;id=1sst2Gnh2AqJ9PPCtzmkdrd9fChjHNGBG"><span class="icon-file-pdf"></span>download</a></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <div class="services">
+    <div class="container">
+      <div class="text-center">
+        <h2>  </h2>
+      </div>
+      <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <i class="fa fa-heart-o"></i>
+        <h3>Descarga gratis</h3>
+        <p>Álbumes completos de tus artistas preferidos.</p>
+      </div>
+      <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+        <i class="fa fa-cloud"></i>
+        <h3>Fácil descarga</h3>
+        <p>Sin ninguna complicación de descarga  y sin límites.</p>
+      </div>
+      <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
+        <i class="fa fa-book"></i>
+        <h3>Audio </h3>
+        <p>Audios en alta calidad </p>
+      </div>
+      <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms">
+        <i class="fa fa-gear"></i>
+        <h3>Síguenos</h3>
+        <p>En nuestras redes sociales Facebook, Instagram.</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="action">
+    <div class="container">
+      <div class="left-text hidden-xs">
+        <h4>Instrumentos musicales</h4>
+        <p><em>Un instrumento musical es un objeto que se utiliza para producir melodías combinando los sonidos de diferentes instrumentos, como las de viento, las de cuerda, percusión. </em><br><br>Un instrumento musical fue creado con un solo propósito imitar los sonidos de la naturaleza, pero así como todo también tuvo su cambio poco a poco se ha ido modificando su textura y sonidos.</p>
+      </div>
+      <div class="right-image hidden-xs"></div>
+    </div>
+  </section>
+
+  <div class="gallery">
+    <div class="text-center">
+        <h2>Artistas</h2>
+      <p>La música es una forma sencilla y factible de expresar los sentimientos, unir culturas, si bien sabemos así como muchas cosas también la música se ha ido evolucionando.</p>
+    </div>
+    <div class="container">
+      <div class="col-md-4">
+        <figure class="effect-marley">
+          <img src="https://1.bp.blogspot.com/-tuhGFja_ekc/X0A3ICwqVEI/AAAAAAAAB4k/qWQHQ8Hk0FcZ8oqAd7mu2LQYpgPTKePMgCLcBGAsYHQ/s1600/sevastian.jpg"  alt="Sebastian Yatra" class="img-responsive" />
+          <figcaption>
+           <a href="Artistas/Sebastian Yatra.html"><h4>Sebastian Yatra</h4></a>
+           <a href="Artistas/Sebastian Yatra.html"> <p>Sebastian Obando Giraldo, conocido como Sebastian Yatra</p></a>
+          </figcaption>
+     </div>
+     <div class="col-md-4">
+       <figure class="effect-marley">
+         <img src="https://1.bp.blogspot.com/-Ti4VBh3vXHs/X0A3IPkPmoI/AAAAAAAAB4g/y1F2crPf_kkmFuNTbIbF3Ttc8NtXrUo3gCLcBGAsYHQ/s1600/enrique.jpg" alt="" class="img-responsive" />
+         <figcaption>
+           <a href="Artistas/Enrique Iglesias.html"><h4>Enrique Iglesias</h4></a>
+           <a href="Artistas/Enrique Iglesias.html"><p>Enrique Miguel Iglesias Preysler mejor conocido como Enrique Iglesias</p></a>
+         </figcaption>
+       </figure>
+     </div>
+     <div class="col-md-4">
+       <figure class="effect-marley">
+         <img src="https://i.musicaimg.com/letras/resmax/beret.jpg" alt="Beret" class="img-responsive" />
+         <figcaption>
+          <a href="Artistas/Beret.html"> <h4>Beret</h4></a>
+          <a href="Artistas/Beret.html"><p>Francisco Javier Álvarez Beret, conocido como Beret </p></a>
+         </figcaption>
+       </figure>
+     </div>
+   </div>
+
+   <div class="container">
+     <div class="col-md-4">
+       <figure class="effect-marley">
+         <img src="https://www.cuadranteazul.com/wp-content/uploads/2018/06/romeo1.jpg" alt="Romeo Santos" class="img-responsive" />
+         <figcaption>
+          <a href="Artistas/Romeo Santos.html"> <h4>Romeo Santos</h4></a>
+          <a href="Artistas/Romeo Santos.html"> <p>Anthony Santos, nació el 21 de Julio de 1981 en el Bronx, Nueva York</p></a>
+         </figcaption>
+       </figure>
+     </div>
+     <div class="col-md-4">
+       <figure class="effect-marley">
+         <img src="https://i.pinimg.com/originals/33/32/cd/3332cd2895f1e5df0019959fe00bba55.jpg" alt="Reik" class="img-responsive" />
+         <figcaption>
+          <a href="Artistas/Reik.html"> <h4>Reik</h4></a>
+           <a href="Artistas/Reik.html"><p>Marley tried to convince her but she was not interested</p></a>
+         </figcaption>
+       </figure>
+     </div>
+     <div class="col-md-4">
+       <figure class="effect-marley">
+         <img src="https://i.musicaimg.com/letras/resmax/mana.jpg" alt="Mana" class="img-responsive" />
+         <figcaption>
+           <a href="Artistas/Mana.html"><h4>Mana</h4></a> 
+           <a href="Artistas/Mana.html"><p>Conjunto musical mexicano, formado en la ciudad de Guadalajara</p></a>
+         </figcaption>
+       </figure>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+        <div class="text-center">
+          <h4>GALERÍA</h4>
+          <ul class="sidebar-gallery">
+            <li><img src="https://p4.wallpaperbetter.com/wallpaper/364/393/276/enrique-iglesias-handsome-wallpaper-preview.jpg" alt="Enrique Iglesias" /></li>
+            <li><img src="https://p4.wallpaperbetter.com/wallpaper/524/657/65/music-wallpaper-preview.jpg" alt="" /></li>
+            <li><img src="https://p4.wallpaperbetter.com/wallpaper/555/288/1000/romeo-santos-man-smile-teeth-wallpaper-preview.jpg" alt="Romeo Santos" /></li>
+            <li><img src="https://p4.wallpaperbetter.com/wallpaper/454/437/291/avicii-music-dj-artist-wallpaper-preview.jpg" alt="Avicii" /></li>
+            <li><img src="https://p4.wallpaperbetter.com/wallpaper/784/582/393/musician-top-music-artist-and-bands-alan-walker-wallpaper-preview.jpg" alt="Alan Walker" /></li>
+            <li><img src="https://p4.wallpaperbetter.com/wallpaper/345/941/104/singer-ricky-martin-top-music-artist-and-bands-wallpaper-preview.jpg" alt="Ricky Martin" /></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+        <div class="text-center">
+          <h4>GALERÍA</h4>
+          <ul class="sidebar-gallery">
+            <li><img src="https://p4.wallpaperbetter.com/wallpaper/188/761/301/adele-singing-wallpaper-preview.jpg" alt="Adele" /></li>
+            <li><img src="https://p4.wallpaperbetter.com/wallpaper/365/842/450/rihanna-celebrity-singer-rihanna-artist-wallpaper-preview.jpg" alt="Rihanna" /></li>
+            <li><img src="https://p4.wallpaperbetter.com/wallpaper/92/928/1016/taylor-swift-singer-celebrity-wallpaper-preview.jpg" alt="Taylor Swift" /></li>
+            <li><img src="https://www.informador.mx/__export/1583237447452/sites/elinformador/img/2020/03/03/morat_2_crop1583237292640.jpg_423682103.jpg" alt="Morat" /></li>
+            <li><img src="https://www.eltiempo.com/files/image_640_428/files/crop/uploads/2019/04/13/5cb265b9bf186.r_1555253340163.0-440-3000-1940.jpeg" alt="sebastian yatra" /></li>
+            <li><img src="https://mp3teca.com/-/2014/11/Aventura.jpg" alt="Aventura" /></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+        <div class="text-center">
+          <h4>GALERÍA</h4>
+          <ul class="sidebar-gallery">
+            <li><img src="https://static.tomaticket.es/images/static/11632.jpeg" alt="Beret" /></li>
+            <li><img src="https://i.musicaimg.com/letras/resmax/mana.jpg" alt="Mana" /></li>
+            <li><img src="https://e-cdns-images.dzcdn.net/images/artist/11ab5eec566184ae1c339ad70b37fe0a/264x264.jpg" alt="Elefante" /></li>
+            <li><img src="https://www.elespectador.com/resizer/kOo6LYd-qworWFyHHBDFuGVZpiM=/657x0/cloudfront-us-east-1.images.arcpublishing.com/elespectador/A3K27ZQGN5FVFFGQUA727IOOQU.jpg" alt="Prince Royce" /></li>
+            <li><img src="https://www.ecured.cu/images/thumb/4/4b/Reikgrupo.jpg/260px-Reikgrupo.jpg" alt="Reik" /></li>
+            <li><img src="https://pm1.narvii.com/6248/96062c1c007b58bfadaf527ea89ae7c1326d89d5_hq.jpg" alt="Nicky Jam" /></li>
+          </ul>
+        </div>
+      </div>
+
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="sub-footer">
+    <div class="container">
+      <div class="social-icon">
+        <div class="col-md-4">
+          <ul class="social-network">
+            <li><a href="https://www.facebook.com/Mi-musica-108902517611136/?modal=admin_todo_tour " target="-blank" class="fb tool-tip" title="Facebook"><i class="icon-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/mimusicakbps/" target="-blank" class="twitter tool-tip" title="Instagram"><i class="icon-instagram"></i></a></li>
+          <!--  <li><a href="#" class="twitter tool-tip" title="twitter"><i class="icon-twitter"></i></a></li>-->
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-md-offset-4">
+        <div class="copyright">
+          Copyrigh &copy; 2020 Mi Musica
+          <div class="credits">
+        
+             </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    wow = new WOW({}).init();
+  </script>
+</body>
+
+</html>
