@@ -39,3 +39,10 @@ add("<a href='https://mimusicakbps.github.io/musica/Artistas/Discografia/Romeo S
 
 add("<a href='https://mimusicakbps.github.io/musica/Artistas/Mana.html'>Maná</a>","Maná","Conjunto musical mexicano, formado en la ciudad de Guadalajara, e integrado originariamente por Fher ")
 add("<a href='https://mimusicakbps.github.io/musica/Artistas/Discografia/Mana.html'> Discografia Maná</a>","Maná","Discografia completa de Maná")
+
+add("<a href='https://mimusicakbps.github.io/musica/Artistas/Morat.html'>Morat</a>","Morat","Morat es un joven grupo que atesora magia, talento y cabeza. Lo forman Juan Pablo Isaza, guitarra y voz")
+add("<a href='https://mimusicakbps.github.io/musica/Artistas/Discografia/Morat.html'> Discografia Morat</a>","Morat","Discografia completa de Morat")
+
+
+
+
